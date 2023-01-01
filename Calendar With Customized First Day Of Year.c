@@ -3,10 +3,9 @@
 
 #include<stdio.h>
 
-int days_in_month[]={0,31,31,31,31,31,31,30,30,30,30,30,29};
+int days_in_month[]={31,31,31,31,31,31,30,30,30,30,30,29};
 char *months[]=
 {
-	" ",
 	"\n\n\nFarvardin",
 	"\n\n\nOrdibehesht",
 	"\n\n\nKhordad",
@@ -58,7 +57,7 @@ int determineleapyear(int year)
 void calendar(int year, int daycode)
 {
 	int month, day;
-	for ( month = 1; month <= 12; month++ )
+	for ( month = 0; month <= 11; month++ )
 	{
 		printf("%s", months[month]);
 		printf("\n\nSH  1SH  2SH  3SH  4SH  5SH  JOM\n" );
